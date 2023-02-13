@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/titlebar">
+
+
+    <TextView
+        android:id="@+id/application_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/onn"
+        android:layout_centerHorizontal="true"
+        android:text="전부기"
+        android:textSize="47dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="#0b1d42"
+        android:fontFamily="@font/galmuri7"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/onn"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/chatbotcharacter"
+        android:transitionName="imgTransition" />
+
+    <ImageButton
+        android:id="@+id/go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/onn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/click_start_chatbot"/>
+
+</RelativeLayout>
